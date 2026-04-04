@@ -93,7 +93,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Update active state
                 document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                 this.classList.add('active');
+
+                // Close mobile menu if open
+                const navLinks = document.querySelector('.nav-links');
+                const menuToggleIcon = document.querySelector('.menu-toggle .material-symbols-outlined');
+                if(navLinks && navLinks.classList.contains('mobile-menu-open')) {
+                    navLinks.classList.remove('mobile-menu-open');
+                    if(menuToggleIcon) menuToggleIcon.textContent = 'menu';
+                }
             }
         });
     });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+    const menuToggleIcon = document.querySelector('.menu-toggle .material-symbols-outlined');
+
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('mobile-menu-open');
+            
+            // Toggle Icon
+            if (navLinksContainer.classList.contains('mobile-menu-open')) {
+                menuToggleIcon.textContent = 'close';
+            } else {
+                menuToggleIcon.textContent = 'menu';
+            }
+        });
+    }
 });

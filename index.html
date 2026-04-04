@@ -23,17 +23,23 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo uppercase tracking-widest">
-                    <img src="/assets/img/logo-full.png" alt="Logo" style=`{{
-                        width="200rem"
-                    }}`>
+                    <a href="index.html">
+                        <img src="/assets/img/logo-full.png" alt="Logo" style="width: 200px;">
+                    </a>
                 </div>
+
+                <!-- Hamburguer Menu Toggle -->
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
                 <div class="nav-links uppercase tracking-widest">
                     <a href="#" class="nav-link active">Início</a>
                     <a href="#areas" class="nav-link">Áreas de Atuação</a>
                     <a href="#socios" class="nav-link">Sócios</a>
-                    <a href="#contato" class="nav-link">Contato</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
                 </div>
-                <button class="btn btn-primary btn-small">
+                <button class="btn btn-primary btn-small d-none-mobile">
                     Agendar Consulta
                 </button>
             </nav>
@@ -237,76 +243,125 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contato" class="contact">
+        <!-- Seção Onde Estamos (Localização) -->
+        <section id="localizacao" class="localizacao">
             <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info reveal-up">
-                        <div>
-                            <span class="section-eyebrow uppercase tracking-widest">Contato Direto</span>
-                            <h2 class="section-title">Pronto para a <span class="font-italic">sua defesa?</span></h2>
-                        </div>
+                <div class="localizacao-grid">
+                    <div class="localizacao-info reveal-up">
+                        <span class="section-eyebrow uppercase tracking-widest">Onde Estamos</span>
+                        <h2 class="section-title">Nosso <span class="font-italic">Escritório</span></h2>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Sediado no coração de Leopoldina, planejado para oferecer discrição, conforto e atendimento
+                            de excelência aos nossos clientes.
+                        </p>
 
-                        <div style="display:flex; flex-direction:column; gap:2rem;">
-                            <div class="contact-item">
-                                <span class="material-symbols-outlined contact-item-icon">location_on</span>
-                                <div>
-                                    <h3 class="contact-item-title">Escritório Leopoldina</h3>
-                                    <p class="text-on-surface-variant font-light">Rua Barão de Cotegipe, nº 282, sala
-                                        13, Centro<br>Leopoldina/MG, CEP: 36.700-084</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <span class="material-symbols-outlined contact-item-icon">mail</span>
-                                <div>
-                                    <h3 class="contact-item-title">Correspondência Digital</h3>
-                                    <p class="text-on-surface-variant font-light">contato@carrarobotelho.adv.br</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <span class="material-symbols-outlined contact-item-icon">phone_in_talk</span>
-                                <div>
-                                    <h3 class="contact-item-title">Atendimento Prioritário</h3>
-                                    <p class="text-on-surface-variant font-light">+55 (32) 9999-9999</p>
-                                </div>
+                        <div class="localizacao-address">
+                            <span class="material-symbols-outlined localizacao-icon text-primary">location_on</span>
+                            <div>
+                                <h3 class="font-bold text-on-surface">Escritório Leopoldina</h3>
+                                <p class="text-on-surface-variant font-light mt-1">
+                                    Rua Barão de Cotegipe, nº 282, sala 13, Centro<br>Leopoldina/MG, CEP: 36.700-084
+                                </p>
                             </div>
                         </div>
 
-                        <img src="/assets/img/logo-icon.jpg"
-                            alt="Logo" class="contact-logo">
+                        <a href="contato.html" class="btn btn-primary mt-4">Falar com a equipe</a>
                     </div>
 
-                    <div class="contact-form-wrapper reveal-up" data-delay="0.2">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label class="form-label uppercase tracking-widest">Nome Completo</label>
-                                <input type="text" class="form-input" placeholder="Seu nome">
-                            </div>
+                    <div class="localizacao-map map-container reveal-up" data-delay="0.2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.2882583842323!2d-42.646549225721864!3d-21.4178550860505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9caa65a6c0e5a9%3A0xc6c76ab93a15dc45!2sR.%20Bar%C3%A3o%20de%20Cotegipe%2C%20282%20-%20Centro%2C%20Leopoldina%20-%20MG%2C%2036700-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="form-group">
-                                <label class="form-label uppercase tracking-widest">E-mail</label>
-                                <input type="email" class="form-input" placeholder="exemplo@email.com">
-                            </div>
+        <!-- Avaliações de Clientes -->
+        <section id="avaliacoes" class="avaliacoes">
+            <div class="container">
+                <div class="text-center mb-5 reveal-up">
+                    <span class="section-eyebrow uppercase tracking-widest text-center">Prova Social</span>
+                    <h2 class="section-title text-center">O que dizem <span class="font-italic">nossos clientes</span>
+                    </h2>
+                </div>
 
-                            <div class="form-group">
-                                <label class="form-label uppercase tracking-widest">Assunto</label>
-                                <select class="form-select">
-                                    <option>Direito Bancário</option>
-                                    <option>Direito Empresarial</option>
-                                    <option>Direito Criminal</option>
-                                    <option>Outros</option>
-                                </select>
+                <div class="avaliacoes-grid">
+                    <!-- Avaliação 1 -->
+                    <div class="review-card reveal-up">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">JL</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">João Lucas</h4>
+                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 2
+                                    semanas</span>
                             </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+                                alt="Google" class="google-icon">
+                        </div>
+                        <div class="review-stars text-primary mb-2">
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                        </div>
+                        <p class="text-on-surface-variant leading-relaxed review-text">
+                            "Excelência e precisão em direito empresarial. A Dra. Mayara e o Dr. Lucas resolveram um
+                            imbróglio jurídico da minha empresa com maestria, prevenindo um grande prejuízo. Recomendo
+                            de olhos fechados."
+                        </p>
+                    </div>
 
-                            <div class="form-group">
-                                <label class="form-label uppercase tracking-widest">Mensagem</label>
-                                <textarea class="form-textarea" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                    <!-- Avaliação 2 -->
+                    <div class="review-card reveal-up" data-delay="0.1">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">CR</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Carlos Roberto Menezes</h4>
+                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 1 mês</span>
                             </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+                                alt="Google" class="google-icon">
+                        </div>
+                        <div class="review-stars text-primary mb-2">
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                        </div>
+                        <p class="text-on-surface-variant leading-relaxed review-text">
+                            "Atendimento humano, atencioso e muito estratégico. Estava com um problema com cobranças
+                            abusivas no banco. Eles agiram tão rápido e de maneira tão técnica que a revisão de juros
+                            superou as expectativas."
+                        </p>
+                    </div>
 
-                            <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
-                        </form>
+                    <!-- Avaliação 3 -->
+                    <div class="review-card reveal-up" data-delay="0.2">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">MS</div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Maria Silva</h4>
+                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 3 meses</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+                                alt="Google" class="google-icon">
+                        </div>
+                        <div class="review-stars text-primary mb-2">
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                            <span class="material-symbols-outlined fill-star">star</span>
+                        </div>
+                        <p class="text-on-surface-variant leading-relaxed review-text">
+                            "Os advogados transmitem extrema segurança. Durante uma causa complexa da minha família,
+                            foram o porto seguro que precisávamos, com atendimento muito reservado e resultados muito
+                            além do esperado."
+                        </p>
                     </div>
                 </div>
             </div>
