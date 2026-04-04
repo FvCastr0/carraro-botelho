@@ -1076,3 +1076,9 @@ button {
 .reveal-fade {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .logo-full {
+    display: none;
+  }
+}
