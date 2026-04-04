@@ -25,7 +25,7 @@
             <nav class="nav">
                 <div class="logo uppercase tracking-widest">
                     <a href="index.html">
-                        <img src="/assets/img/logo-full.png" alt="Logo" style="width: 200px;">
+                        <img src="/assets/img/logo-icon-no-bg.png" alt="Logo" style="width: 75px;">
                     </a>
                 </div>
 
@@ -40,7 +40,7 @@
                     <a href="#socios" class="nav-link">Sócios</a>
                     <a href="contato.html" class="nav-link">Contato</a>
                 </div>
-                <button class="btn btn-primary btn-small d-none-mobile">
+                <button class="btn btn-primary btn-small d-none-mobile" onclick="window.location.href = 'contato.html'">
                     Agendar Consulta
                 </button>
             </nav>
@@ -57,8 +57,10 @@
             </div>
 
             <div class="container hero-content">
-                <div class="hero-accent reveal-up"></div>
+                <div class="hero-accent reveal-up">
+                </div>
                 <h1 class="hero-title tracking-tight font-italic reveal-up">
+                    <img src="/assets/img/logo-full.png" alt="Logo" style="width: 300px; margin-bottom: 20px;">
                     Justiça com <span class="text-primary not-italic font-bold">Distinção</span> e Compromisso
                 </h1>
                 <p class="hero-subtitle leading-relaxed reveal-up">
@@ -66,8 +68,10 @@
                     que define o padrão de excelência.
                 </p>
                 <div class="hero-actions reveal-up">
-                    <button class="btn btn-primary">Agendar Consulta</button>
-                    <button class="btn btn-ghost">Conheça Nossos Sócios</button>
+                    <button class="btn btn-primary" onclick="window.location.href = 'contato.html'">Agendar
+                        Consulta</button>
+                    <button class="btn btn-ghost" onclick="window.location.href = 'index.html#socios'">Conheça Nossos
+                        Sócios</button>
                 </div>
             </div>
         </section>
@@ -301,14 +305,17 @@
                     <!-- Avaliação 1 -->
                     <div class="review-card reveal-up">
                         <div class="review-header">
-                            <div class="reviewer-avatar">JL</div>
+                            <div class="reviewer-avatar">MJ</div>
                             <div class="reviewer-info">
-                                <h4 class="reviewer-name">João Lucas</h4>
-                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 2
-                                    semanas</span>
+                                <h4 class="reviewer-name">
+                                    Matheus Januzzi</h4>
+                                <!-- <span class="reviewer-time text-on-surface-variant font-light text-sm">há 2
+                                    anos</span> -->
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
-                                alt="Google" class="google-icon">
+                                alt="Google" class="google-icon"
+                                onclick="window.open('https://maps.app.goo.gl/bAUTP8an7iuRnPD39')"
+                                style="cursor:pointer">
                         </div>
                         <div class="review-stars text-primary mb-2">
                             <span class="material-symbols-outlined fill-star">star</span>
@@ -318,22 +325,25 @@
                             <span class="material-symbols-outlined fill-star">star</span>
                         </div>
                         <p class="text-on-surface-variant leading-relaxed review-text">
-                            "Excelência e precisão em direito empresarial. A Dra. Mayara e o Dr. Lucas resolveram um
-                            imbróglio jurídico da minha empresa com maestria, prevenindo um grande prejuízo. Recomendo
-                            de olhos fechados."
+                            "Agradeço ao escritório pela presteza em meu atendimento. E por poder estar sempre
+                            acompanhando com vocês todos os detalhes sobre o meu processo. A minha causa ganha foi a
+                            certeza de que fiz a escolha certa. Obrigada principalmente pelo atendimento humanizado, me
+                            senti acolhido."
                         </p>
                     </div>
 
                     <!-- Avaliação 2 -->
                     <div class="review-card reveal-up" data-delay="0.1">
                         <div class="review-header">
-                            <div class="reviewer-avatar">CR</div>
+                            <div class="reviewer-avatar">SL</div>
                             <div class="reviewer-info">
-                                <h4 class="reviewer-name">Carlos Roberto Menezes</h4>
-                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 1 mês</span>
+                                <h4 class="reviewer-name">Sergio Lobo</h4>
+                                <!-- <span class="reviewer-time text-on-surface-variant font-light text-sm">há 1 mês</span> -->
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
-                                alt="Google" class="google-icon">
+                                alt="Google" class="google-icon"
+                                onclick="window.open('https://maps.app.goo.gl/TGEdUNikN52cJHiQA')"
+                                style="cursor:pointer">
                         </div>
                         <div class="review-stars text-primary mb-2">
                             <span class="material-symbols-outlined fill-star">star</span>
@@ -343,22 +353,23 @@
                             <span class="material-symbols-outlined fill-star">star</span>
                         </div>
                         <p class="text-on-surface-variant leading-relaxed review-text">
-                            "Atendimento humano, atencioso e muito estratégico. Estava com um problema com cobranças
-                            abusivas no banco. Eles agiram tão rápido e de maneira tão técnica que a revisão de juros
-                            superou as expectativas."
+                            "Excelência de acolhimento e muita qualidade e competência na resolução das questões do
+                            cliente. Agradeço."
                         </p>
                     </div>
 
                     <!-- Avaliação 3 -->
                     <div class="review-card reveal-up" data-delay="0.2">
                         <div class="review-header">
-                            <div class="reviewer-avatar">MS</div>
+                            <div class="reviewer-avatar">LS</div>
                             <div class="reviewer-info">
-                                <h4 class="reviewer-name">Maria Silva</h4>
-                                <span class="reviewer-time text-on-surface-variant font-light text-sm">há 3 meses</span>
+                                <h4 class="reviewer-name">Lawrence Sales</h4>
+                                <!-- <span class="reviewer-time text-on-surface-variant font-light text-sm">há 3 meses</span> -->
                             </div>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
-                                alt="Google" class="google-icon">
+                                alt="Google" class="google-icon"
+                                onclick="window.open('https://maps.app.goo.gl/3yfTazvj28E1DBCj9')"
+                                style="cursor:pointer">
                         </div>
                         <div class="review-stars text-primary mb-2">
                             <span class="material-symbols-outlined fill-star">star</span>
@@ -368,9 +379,8 @@
                             <span class="material-symbols-outlined fill-star">star</span>
                         </div>
                         <p class="text-on-surface-variant leading-relaxed review-text">
-                            "Os advogados transmitem extrema segurança. Durante uma causa complexa da minha família,
-                            foram o porto seguro que precisávamos, com atendimento muito reservado e resultados muito
-                            além do esperado."
+                            "Excelente escritório e com vasta experiência buscando sempre o melhor e diferencial para o
+                            cliente. Recomendo!"
                         </p>
                     </div>
                 </div>
