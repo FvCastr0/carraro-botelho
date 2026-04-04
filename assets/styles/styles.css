@@ -1077,8 +1077,25 @@ button {
   opacity: 0;
 }
 
+.logo-nav {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url('/assets/img/logo-icon-no-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 @media (max-width: 768px) {
   .logo-full {
     display: none;
+  }
+
+  .logo-nav {
+    width: 200px;
+    height: 75px;
+    background-image: url('/assets/img/logo-full.png');
   }
 }
