@@ -1008,13 +1008,16 @@ button {
   will-change: transform;
 }
 
-.avaliacoes-grid:hover {
-  animation-play-state: paused;
-}
-
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 1rem)); } /* -1rem deals with half the gap */
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 1rem));
+  }
+
+  /* -1rem deals with half the gap */
 }
 
 .review-card {
