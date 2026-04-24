@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça a equipe de sócios fundadores do escritório Carraro Botelho Advogados. Biografias de Lucas Botelho e Mayara Carraro.">
+    <title>Nossos Sócios | Carraro Botelho Advogados</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/direito-empresarial.css">
+    <link rel="icon" type="image/png" href="/assets/img/logo-icon.jpg">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        .socio-block {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(209, 160, 85, 0.2);
+        }
+        @media (min-width: 768px) {
+            .socio-block {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+        .socio-block:last-child {
+            border-bottom: none;
+            margin-bottom: 2rem;
+            padding-bottom: 0;
+        }
+        .socio-img-wrapper {
+            flex: 0 0 350px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(209, 160, 85, 0.3);
+        }
+        .socio-img-wrapper img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+        .socio-bio-info {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gold Filigree Detail -->
+    <div class="gold-filigree"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo uppercase tracking-widest">
+                    <a href="index.html" class="logo-nav">
+                    </a>
+                </div>
+
+                <!-- Hamburguer Menu Toggle -->
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+
+                <div class="nav-links uppercase tracking-widest">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="index.html#socios" class="nav-link active">Sócios</a>
+                    <a href="index.html#areas" class="nav-link">Áreas de Atuação</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </div>
+                <button class="btn btn-primary btn-small d-none-mobile" onclick="window.location.href = 'contato.html'">
+                    Agendar Consulta
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="areas page-header">
+            <div class="container">
+                <div class="reveal-up page-title-wrapper">
+                    <span class="section-eyebrow uppercase tracking-widest">Fundadores</span>
+                    <h1 class="section-title">Nossos <span class="font-italic">Sócios</span></h1>
+                    <p class="text-on-surface-variant leading-relaxed text-lg font-light">
+                        Advocacia de excelência construída por profissionais com sólidas trajetórias, ética indiscutível e compromisso contínuo com os interesses de nossos clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Setup -->
+        <section class="areas page-content">
+            <div class="container">
+                
+                <!-- Sócio: Lucas -->
+                <div id="lucas" class="socio-block reveal-up" style="scroll-margin-top: 150px;">
+                    <div class="socio-img-wrapper">
+                        <img src="assets/img/lucas.jpg" alt="Lucas Botelho Gomes Fávaro">
+                    </div>
+                    <div class="socio-bio-info">
+                        <h2 class="area-title no-margin" style="font-size: 2rem;">Lucas Botelho Gomes Fávaro</h2>
+                        <p class="section-eyebrow uppercase tracking-widest" style="margin-bottom: 1.5rem; display: block;">OAB/MG 177.202</p>
+                        
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Advogado com mais de uma década de experiência na advocacia, atuando de forma estratégica e comprometida na defesa dos interesses de seus clientes. Formado em Direito pela Faculdade Doctum de Leopoldina em 2017, possui inglês fluente e constante aprimoramento técnico.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Especializado nas áreas de <strong>Direito Criminal e Direito de Família</strong>, possui sólida atuação em casos envolvendo tráfico de drogas, estelionato, furto, entre outros, com histórico relevante na obtenção de liberdade por meio de habeas corpus, inclusive em situações complexas, como caso em que atuou com o processo já transitado em julgado, obtendo a alteração da pena do condenado.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            No âmbito do Direito de Família, destaca-se na condução de demandas relacionadas à fixação e revisão de alimentos, regulamentação de guarda e visitas, além da atuação em defesas em ações de prisão civil por dívida alimentar. Atua de forma firme na garantia dos direitos paternos, com dedicação que ultrapassa horários convencionais, inclusive com atendimentos e medidas urgentes em finais de semana e períodos de recesso forense.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed">
+                            Sua atuação é pautada pela ética, técnica apurada e dedicação, oferecendo atendimento personalizado e focado nas melhores estratégias para cada caso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sócio: Mayara -->
+                <div id="mayara" class="socio-block reveal-up" style="scroll-margin-top: 150px;">
+                    <div class="socio-img-wrapper">
+                        <img src="assets/img/mayara.jpg" alt="Mayara Carraro Brandão">
+                    </div>
+                    <div class="socio-bio-info">
+                        <h2 class="area-title no-margin" style="font-size: 2rem;">Mayara Carraro Brandão</h2>
+                        <p class="section-eyebrow uppercase tracking-widest" style="margin-bottom: 1.5rem; display: block;">OAB/MG 164.238 | OAB/SP 433.085</p>
+                        
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Advogada com mais de uma década de experiência, atuando de forma estratégica, ética e comprometida na defesa dos interesses de seus clientes.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Formada em Direito pela Faculdade Metodista Granbery, em Juiz de Fora/MG, em 2015, é especialista em <strong>Direito Bancário e Empresarial</strong> pela Faculdade Legale/SP. Possui sólida experiência prática, tendo atuado por quase 6 anos para instituições financeiras como Bradesco e Banco do Brasil, o que lhe proporcionou amplo conhecimento técnico e estratégico sobre a atuação dos bancos.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed mb-4">
+                            Atualmente, direciona sua atuação à defesa de consumidores e empresas, com foco em demandas envolvendo contratos abusivos, revisão e redução de dívidas, além da elaboração de planos de pagamento junto a credores, sempre buscando soluções eficazes, seguras e alinhadas à realidade financeira de cada cliente.
+                        </p>
+                        <p class="text-on-surface-variant leading-relaxed">
+                            Sua atuação é pautada pela ética, transparência e dedicação, oferecendo atendimento personalizado e estratégias jurídicas assertivas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="/assets/img/logo-full.png" alt="Logo" style="width: 300px;"></div>
+                <div class="footer-tagline">Justiça com Distinção</div>
+            </div>
+
+            <div class="footer-rights">
+                &copy; 2026 Carraro Botelho Advogados. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

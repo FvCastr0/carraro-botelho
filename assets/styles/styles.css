@@ -448,10 +448,6 @@ button {
   .partners-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .partner-card:nth-child(2) {
-    margin-top: 4rem;
-  }
 }
 
 .partner-card {
@@ -939,6 +935,27 @@ button {
 }
 
 /* Localização (Onde Estamos) */
+.office-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.office-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.office-features-list strong {
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
 .localizacao {
   padding: 6rem 0;
   background-color: var(--surface-container-low);
