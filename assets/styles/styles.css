@@ -452,6 +452,9 @@ button {
 
 .partner-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .partner-img-wrapper {
@@ -468,11 +471,19 @@ button {
 
 .partner-info {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.partner-info .btn {
+  margin-top: auto !important;
 }
 
 .partner-name {
   font-family: var(--font-headline);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  white-space: nowrap;
   margin-bottom: 0.5rem;
 }
 
@@ -520,19 +531,20 @@ button {
 }
 
 .areas-grid {
-  display: grid;
-}
-
-@media (min-width: 768px) {
-  .areas-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
 }
 
 .area-card {
+  flex: 0 0 100%;
+  max-width: 100%;
   padding: 3rem;
   background-color: var(--surface-container);
   border: 1px solid rgba(67, 71, 78, 0.1);
+  margin-top: -1px;
+  margin-left: -1px;
   position: relative;
   transition: background-color var(--transition-medium);
 }
@@ -546,8 +558,16 @@ button {
 }
 
 @media (min-width: 768px) {
-  .area-card:not(:first-child) {
-    border-left: 0;
+  .area-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .area-card {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
   }
 }
 
