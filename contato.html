@@ -147,27 +147,30 @@
                         <form class="contact-form">
                             <div class="form-group">
                                 <label class="form-label uppercase tracking-widest">Nome Completo</label>
-                                <input type="text" class="form-input" placeholder="Seu nome">
+                                <input type="text" name="from_name" class="form-input" placeholder="Seu nome">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label uppercase tracking-widest">E-mail</label>
-                                <input type="email" class="form-input" placeholder="exemplo@email.com">
+                                <input type="email" name="from_email" class="form-input"
+                                    placeholder="exemplo@email.com">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label uppercase tracking-widest">Assunto</label>
-                                <select class="form-select">
+                                <select name="subject" class="form-select">
                                     <option>Direito Bancário</option>
                                     <option>Direito Empresarial</option>
                                     <option>Direito Criminal</option>
+                                    <option>Direito de Família</option>
                                     <option>Outros</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label uppercase tracking-widest">Mensagem</label>
-                                <textarea class="form-textarea" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                                <textarea name="message" class="form-textarea" rows="4"
+                                    placeholder="Como podemos ajudar?"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
@@ -194,6 +197,8 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/email.js"></script>
 </body>
 
 </html>
